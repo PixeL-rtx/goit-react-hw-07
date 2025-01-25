@@ -1,0 +1,19 @@
+#root {
+  text-align: center;
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* max-width: 280px; */
+}
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 400px;
+}
