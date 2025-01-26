@@ -9,7 +9,7 @@ export default function Contact({ name, number, id }) {
 
   return (
     <li className={css.item}>
-      <ul>
+      <ul className={css.contact_List}>
         <li className={css.contact}>
           <IoIosContact />
           <p>{name}</p>
