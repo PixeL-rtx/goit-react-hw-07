@@ -19,7 +19,7 @@ const SearchBox = () => {
           name="search"
           placeholder=""
           value={value}
-          onChange={handleChange}
+          onChange={(e) => handleChange(e.target.value)}
         />
         Find contacts by name
       </label>

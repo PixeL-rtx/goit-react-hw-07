@@ -36,36 +36,40 @@ export default function ContactForm() {
       onSubmit={handleSubmit}
       validationSchema={ValidationSchema}
     >
-      <Form className={css.form}>
-        <label>
-          Name
-          <div>
-            <Field className={css.field} type="text" name="name" />
-            <ErrorMessage
-              name="name"
-              component="div"
-              style={{ color: "tomato" }}
-            />
-          </div>
-        </label>
-        <label>
-          Number
-          <div>
-            <Field
-              className={css.field}
-              type="tel"
-              inputMode="tel"
-              name="number"
-            />
-            <ErrorMessage
-              name="number"
-              component="div"
-              style={{ color: "tomato" }}
-            />
-          </div>
-        </label>
-        <button type="submit">Add contact </button>
-      </Form>
+      {({ isSubmitting }) => (
+        <Form className={css.form}>
+          <label>
+            Name
+            <div>
+              <Field className={css.field} type="text" name="name" />
+              <ErrorMessage
+                name="name"
+                component="div"
+                style={{ color: "tomato" }}
+              />
+            </div>
+          </label>
+          <label>
+            Number
+            <div>
+              <Field
+                className={css.field}
+                type="tel"
+                inputMode="tel"
+                name="number"
+              />
+              <ErrorMessage
+                name="number"
+                component="div"
+                style={{ color: "tomato" }}
+              />
+            </div>
+          </label>
+          <button type="submit" disabled={isSubmitting}>
+            Add contact{" "}
+          </button>
+        </Form>
+      )}
     </Formik>
   );
 }
