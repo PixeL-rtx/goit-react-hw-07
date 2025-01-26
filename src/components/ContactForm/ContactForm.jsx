@@ -1,4 +1,4 @@
-import { addContact } from "../../redux/operations";
+import { addContact } from "../../redux/contactsOps";
 
 import css from "./ContactForm.module.css";
 import * as Yup from "yup";

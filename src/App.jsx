@@ -2,7 +2,7 @@ import css from "./App.module.css";
 
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchContacts } from "./redux/operations";
+import { fetchContacts } from "./redux/contactsOps";
 
 import SearchBox from "./components/SearchBox/SearchBox";
 import ContactForm from "./components/ContactForm/ContactForm";

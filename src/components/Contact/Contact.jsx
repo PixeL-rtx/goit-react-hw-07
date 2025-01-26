@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux";
 import { IoIosContact } from "react-icons/io";
 import { MdPhoneInTalk } from "react-icons/md";
-import { deleteContact } from "../../redux/operations";
+import { deleteContact } from "../../redux/contactsOps";
 import css from "./Contact.module.css";
 
 export default function Contact({ name, number, id }) {
